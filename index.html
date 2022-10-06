@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stilo.css">
+    <title>Crud</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Cliente JS</h1>
+    </div>
+    <button id="registro" class="registro">Registrar</button>
+    <button id="ocultar" class="ocultar hid">Ocultar</button>
+    <div class="contenedor hid" id="inputRegistro">
+        <div class="buscar">
+            <input id="documento" type="number" placeholder="Documento" required>
+            <button class="registrar" onclick="registrar()" >Registrar</button>
+            <button class="btnbuscar" onclick="obtenerPersona()">Buscar</button>
+        </div>
+
+        <div class="input " >
+            <input id="nombre" type="text" placeholder="Nombre" required>
+            <input id="apellido" type="text" placeholder="Apellido" required>
+            <input id="telefono" type="number" placeholder="Telefono" required> 
+            <input id="correo" type="email" placeholder="Correo" required>
+        </div>
+    </div>
+
+    <div class="container mt-4 shadow-lb p3 mb-5 bg-body rounded">
+        <table id="idTabla" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="data">
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="modal hid" id="modalAct">
+        <form id="formActualizar" class="tarjeta">
+            <input id="documentoTar" name="documento" disabled type="number" placeholder="Documento" >
+            <input id="nombreTar" name="nombre" type="text" placeholder="Nombre" >
+            <input id="apellidoTar" name="apellido" type="text" placeholder="Apellido" >
+            <input id="telefonoTar" name="telefono" type="number" placeholder="Telefono" > 
+            <input id="correoTar" name="correo" type="email" placeholder="Correo" >
+            <button id="actualizartar">Actualizar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="cliente.js"></script>
+</body>
+</html>

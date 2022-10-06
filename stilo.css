@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(65, 67, 68);
+    font-size: 35px;
+}
+
+.contenedor{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .5s linear;
+}
+
+input{
+    width: 48%;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(0, 55, 255, 0.144);
+    padding: 0 5px;
+    transition: 0.2s;
+}
+input:hover{
+    font-size: 28px;
+    background-color: rgba(58, 60, 65, 0.397);
+    transition: 0.3s;
+}
+
+
+button{
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btnbuscar{
+    cursor: pointer;
+    background-color: rgb(88, 223, 88);
+    border: none;
+    transition: 0.3s;
+}
+.btnbuscar:active{
+    background-color: rgb(17, 245, 17);
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.registrar{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.615);
+    border: none;
+    transition: 0.3s;
+}
+.registrar:active{
+    background-color: rgb(49, 49, 235);
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.actualizar{
+    width: 105px;
+    font-size: 20px;
+    height: 35px;
+    cursor: pointer;
+    color: rgb(216, 216, 86);
+    background-color: white;
+    border: none;
+    transition: 0.3s;
+}
+.actualizar:active{
+    width: 105px;
+    font-size: 22px;
+    height: 35px;
+    color: rgb(255, 255, 0);
+    background-color: white;
+    transition: 0.2s;
+}
+
+.eliminar{
+    width: 105px;
+    font-size: 20px;
+    height: 35px;
+    cursor: pointer;
+    color: rgb(221, 71, 71);
+    background-color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.eliminar:active{
+    width: 105px;
+    font-size: 22px;
+    height: 35px;
+    cursor: pointer;
+    color: rgb(221, 71, 71);
+    background-color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+
+#documento{
+    width: 37%;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buscar{
+    width: 97%;
+    display: flex;
+    gap: 10px;
+}
+.botones{
+    width: 97%;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+table thead{
+    background-color: #302b63;
+    color: white;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.212);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 6px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.hid{
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
